@@ -1,0 +1,38 @@
+{
+  "runtime": "canvas-v1",
+  "name": "Remember",
+  "description": "Un rappel visuel à une date définie. Ne lance pas de notification système et n’exécute aucune commande.",
+  "version": "0.1.0",
+  "entry": "dist/assets/addon.js",
+  "thumbnail": "assets/thumbnail.png",
+  "deviceSettingsVersion": "1",
+  "ui": {
+    "pointerEvents": "auto"
+  },
+  "settings": [
+    {
+      "id": "message",
+      "type": "string",
+      "label": "Rappel",
+      "default": "Faire une pause"
+    },
+    {
+      "id": "target",
+      "type": "string",
+      "label": "Date ISO avec fuseau",
+      "default": ""
+    },
+    {
+      "id": "acknowledge",
+      "type": "button",
+      "buttonLabel": "Marquer comme lu"
+    },
+    {
+      "id": "acknowledged",
+      "type": "string",
+      "label": "Dernier rappel lu (date ISO)",
+      "default": "",
+      "scope": "device"
+    }
+  ]
+}
